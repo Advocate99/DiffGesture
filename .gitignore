@@ -1,0 +1,11 @@
+*.pyc
+data/
+output/
+events*
+*.log
+*.mp4
+*.bin
+*.txt
+*.wav
+*.pkl
+*.jpg

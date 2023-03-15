@@ -1,6 +1,6 @@
 # Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation (CVPR 2023)
 
-## Code coming soon.
+We will update README soon.
 
 ## Abstract
 
