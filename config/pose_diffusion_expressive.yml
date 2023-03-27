@@ -7,7 +7,7 @@ test_data_path: data/ted_expressive_dataset/test
 wordembed_dim: 300
 wordembed_path: data/fasttext/crawl-300d-2M-subword.bin
 
-model_save_path: output/train_diffusion_expressive_0.1
+model_save_path: output/train_diffusion_expressive
 random_seed: -1
 
 pose_dim: 126
