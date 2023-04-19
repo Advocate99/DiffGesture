@@ -18,7 +18,7 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
 
 2. Download pretrained fasttext model from [here](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip) and put `crawl-300d-2M-subword.bin` and `crawl-300d-2M-subword.vec` at `data/fasttext/`.
 
-3. Download the autoencoder used for FGD. which include the following:
+3. Download the autoencoder used for FGD which include the following:
 
     For the TED Gesture Dataset, we use the pretrained Auto-Encoder model provided by Yoon et al. for better reproducibility [the ckpt in the train_h36m_gesture_autoencoder folder](https://kaistackr-my.sharepoint.com/:u:/g/personal/zeroyy_kaist_ac_kr/Ec1UIsDDLHtKia04_TTRbygBepXORv__kkq-C9IqZs32aA?e=bJGXQr).
 
@@ -26,7 +26,7 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
 
     Save the models in `output/train_h36m_gesture_autoencoder/gesture_autoencoder_checkpoint_best.bin` for TED Gesture, and `output/TED_Expressive_output/AE-cos1e-3/checkpoint_best.bin` for TED Expressive.
 
-4. Refer to [HA2G](https://alvinliu0.github.io/projects/HA2G) to download the two datasets.
+4. Refer to [HA2G](https://github.com/alvinliu0/HA2G) to download the two datasets.
 
 ## Training
 
