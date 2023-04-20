@@ -28,7 +28,11 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
 
 4. Refer to [HA2G](https://github.com/alvinliu0/HA2G) to download the two datasets.
 
+5. The pretrained models can be found [here](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/ltzhu99_connect_hku_hk/EVE9MqI18k5FmsavVFESaVAB2lrv5e1CiHhr20xW2Vd5cA?e=eU6e4t).
+
 ## Training
+
+While the test metrics may vary slightly, overall, the training procedure with the given config files tends to yield similar performance results and normally outperforms all the comparison methods.
 
 ```
 python scripts/train_ted.py --config=config/pose_diffusion_ted.yml
