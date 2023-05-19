@@ -58,11 +58,13 @@ python scripts/test_expressive.py eval
 
 If you find our work useful, please kindly cite as:
 ```
-@article{zhu2023taming,
-  title={Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation},
-  author={Zhu, Lingting and Liu, Xian and Liu, Xuanyu and Qian, Rui and Liu, Ziwei and Yu, Lequan},
-  journal={arXiv preprint arXiv:2303.09119},
-  year={2023}
+@InProceedings{Zhu_2023_CVPR,
+    author    = {Zhu, Lingting and Liu, Xian and Liu, Xuanyu and Qian, Rui and Liu, Ziwei and Yu, Lequan},
+    title     = {Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {10544-10553}
 }
 ```
 
