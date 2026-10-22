@@ -192,7 +192,7 @@ def evaluate_testset(test_data_loader, diffusion, embed_space_evaluator, args, p
             if args.model == 'pose_diffusion':
                 out_dir_vec = diffusion.sample(pose_dim, pre_seq, in_audio)
 
-            out_dir_vec_bc = out_dir_vec + torch.tensor(args.mean_dir_vec).squeeze(1).unsqueeze(0).unsqueeze(0).cuda()
+            out_dir_vec_bc = out_dir_vec + torch.tensor(args.mean_dir_vec, device=out_dir_vec.device).squeeze(1).unsqueeze(0).unsqueeze(0)
             beat_vec = out_dir_vec_bc.reshape(out_dir_vec.shape[0], out_dir_vec.shape[1], -1, 3)
 
             beat_vec = F.normalize(beat_vec, dim = -1)

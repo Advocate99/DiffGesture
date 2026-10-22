@@ -239,7 +239,7 @@ def evaluate_testset(test_data_loader, diffusion, embed_space_evaluator, args, p
             if args.model == 'pose_diffusion':
                 out_dir_vec = diffusion.sample(pose_dim, pre_seq, in_audio)
 
-            out_dir_vec_bc = out_dir_vec + torch.tensor(args.mean_dir_vec).squeeze(1).unsqueeze(0).unsqueeze(0).cuda()
+            out_dir_vec_bc = out_dir_vec + torch.tensor(args.mean_dir_vec, device=out_dir_vec.device).squeeze(1).unsqueeze(0).unsqueeze(0)
             left_palm = torch.cross(out_dir_vec_bc[:, :, 11 * 3 : 12 * 3], out_dir_vec_bc[:, :, 17 * 3 : 18 * 3], dim = 2)
             right_palm = torch.cross(out_dir_vec_bc[:, :, 28 * 3 : 29 * 3], out_dir_vec_bc[:, :, 34 * 3 : 35 * 3], dim = 2)
             beat_vec = torch.cat((out_dir_vec_bc, left_palm, right_palm), dim = 2)
